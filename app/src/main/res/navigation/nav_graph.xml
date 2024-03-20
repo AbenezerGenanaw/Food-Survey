@@ -1,0 +1,31 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/surveySelectionFragment">
+
+    <fragment
+        android:id="@+id/surveySelectionFragment"
+        android:name="com.example.foodsurvey.SurveySelectionFragment"
+        android:label="fragment_survey_selection"
+        tools:layout="@layout/fragment_survey_selection" >
+        <action
+            android:id="@+id/action_surveySelectionFragment_to_foodPreferencesFragment"
+            app:destination="@id/foodPreferencesFragment" />
+        <action
+            android:id="@+id/action_surveySelectionFragment_to_dietaryHabitsFragment"
+            app:destination="@id/dietaryHabitsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/foodPreferencesFragment"
+        android:name="com.example.foodsurvey.FoodPreferencesFragment"
+        android:label="fragment_food_preferences"
+        tools:layout="@layout/fragment_food_preferences" />
+
+    <fragment
+        android:id="@+id/dietaryHabitsFragment"
+        android:name="com.example.foodsurvey.DietaryHabitsFragment"
+        android:label="fragment_dietary_habits"
+        tools:layout="@layout/fragment_dietary_habits" />
+</navigation>

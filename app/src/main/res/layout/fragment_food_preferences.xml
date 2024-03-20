@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Favorite Cuisine Question -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="What is your favorite cuisine?" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupCuisine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioCuisineChinese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="French" />
+            <RadioButton
+                android:id="@+id/radioCuisineFrench"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chinese" />
+            <RadioButton
+                android:id="@+id/radioCuisineItalian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Italian" />
+            <RadioButton
+                android:id="@+id/radioCuisineIndian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indian" />
+            <RadioButton
+                android:id="@+id/radioCuisineJapanese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Japanese" />
+            <RadioButton
+                android:id="@+id/radioCuisineThai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thai" />
+            <RadioButton
+                android:id="@+id/radioCuisineTurkish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Turkish" />
+
+
+            <!-- Add more RadioButtons for each cuisine option -->
+        </RadioGroup>
+
+        <!-- Eating Out Frequency Question -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="How often do you eat out?" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupEatOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioEatOutNever"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Never" />
+            <RadioButton
+                android:id="@+id/radioEatOutRarely"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rarely" />
+            <RadioButton
+                android:id="@+id/radioEatOutSometimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sometimes" />
+            <RadioButton
+                android:id="@+id/radioEatOutFrequently"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Frequently" />
+            <!-- Add more RadioButtons for each frequency option -->
+        </RadioGroup>
+
+        <!-- Spicy Food Preference Question -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Do you prefer spicy food?" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupSpicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioSpicyYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/radioSpicyNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Do you prefer sea food?" />
+        <RadioGroup
+            android:id="@+id/radioGroupSeafood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioSeafoodYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/radioSeafoodNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Do you prefer Vegiterian?" />
+        <RadioGroup
+            android:id="@+id/radioGroupVegetarian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioVegetarianYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/radioVegetarianNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+        </RadioGroup>
+
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitFoodPreferences"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_background"
+            android:text="Submit" />
+    </LinearLayout>
+</ScrollView>
